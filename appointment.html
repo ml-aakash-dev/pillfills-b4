@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Pillfill - Appointment</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+  <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+  <script defer src="https://kit.fontawesome.com/b17ff000fe.js" crossorigin="anonymous"></script>
+  <link rel="stylesheet" href="css/style.css">
+  <link rel="stylesheet" href="css/appointment.css">
+</head>
+<body>
+
+<!-- Start Header Section -->
+<header>
+  <div class="bgimg">
+    <div class="wrapper">
+      <!--Top Bar-->
+      <div class="top-bar">
+        <a href="tel:8885551212"><i class="fas fa-phone-alt icon"></i> 8885551212</a>
+        <a href="mailto:covidtesting@pillfills.com"><i class="fas fa-map-marker-alt icon"></i> covidtesting@pillfills.com</a>
+    </div>
+      <!--End Top Bar-->
+      <!--Navigation-->
+      <nav class="navbar navbar-expand  navbar-light">
+          <!-- Brand/logo -->
+          <a class="navbar-brand" href="#">COVID Testing <small>Chicagoland Drive-Up Testing</small></a>
+          
+          <!-- Links -->
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item">
+              <a class="nav-link"><i class="fas fa-user"></i>&nbsp;Login</a>
+            </li>
+          </ul>
+        </nav>
+      
+      <!--End Navigation-->
+      <div class="content">
+        <h1>Make an Appointment</h1>
+      </div>
+    </div>
+  </div>
+</header>
+<!--End Header Section-->
+
+<!--Appointment Form-->
+<form>
+    <div class="form-group">
+      <label for="ap-loc">Preferred Testing Location</label>
+      <select class="form-control" id="ap-loc" required>
+        <option disabled selected value="">Select a Location</option>
+        <option>Lansing, IL</option>
+        <option>Chicago Heights, IL</option>
+        <option>Joliet, IL</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="ap-phone">Phone</label>
+      <input type="phone" name="phone" class="form-control" 
+      id="ap-phone" placeholder="(708) 555-1212" data-mask="(___) ___-____" 
+      pattern="\(\d{3}\)[ ]?\d{3}[-]?\d{4}" required>
+    </div>
+    <div class="row">
+        <div class="col-md-6">
+            <div class="form-group">
+              <label for="ap-date">Preferred Testing Date</label>
+              <input type="date" name="date" class="form-control" id="ap-date" required>
+            </div>
+        </div>
+        <div class="col-md-6">
+            <div class="form-group">
+              <label for="ap-loc">Preferred Testing Location</label>
+              <select class="form-control" id="ap-loc" required>
+                <option disabled selected value="">Select Time</option>
+                <option>10:00 AM</option>
+                <option>10:30 AM</option>
+                <option>11:00 AM</option>
+                <option>10:30 AM</option>
+                <option>12:00 AM</option>
+                <option>10:30 AM</option>
+                <option>01:00 AM</option>
+                <option>01:30 AM</option>
+                <option>02:00 AM</option>
+                <option>02:30 AM</option>
+                <option>03:00 AM</option>
+                <option>03:30 AM</option>
+                <option>04:00 AM</option>
+                <option>04:30 AM</option>
+                <option>05:00 AM</option>
+              </select>
+            </div>
+        </div>
+    </div>
+    <div class="form-group text-center">
+        <button type="submit" class="btn btn-primary send">Set Appointment</button>
+    </div>
+  </form>
+<!--End Appointment Form-->
+
+
+<!--Footer-->
+<footer>
+  <div class="bottom-bar">
+      <p>Pillfills.com COVID Testing © Copyright 2020</p>
+  </div>
+</footer>
+<!--End Footer-->
+</body>
+</html>
