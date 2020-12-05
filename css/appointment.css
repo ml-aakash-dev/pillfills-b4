@@ -70,4 +70,9 @@ form .send{
     color: white;
     background-color: #228be6;
   }
+  @media(max-width: 600px){
+    form{
+        padding: 50px 10px;
+    }
+}
 /*---End Appointment Form---*/
