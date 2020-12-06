@@ -19,10 +19,10 @@
   <div class="bgimg">
     <div class="wrapper">
       <!--Top Bar-->
-      <div class="top-bar">
+      <!-- <div class="top-bar">
         <a href="tel:8885551212"><i class="fas fa-phone-alt icon"></i> 8885551212</a>
         <a href="mailto:covidtesting@pillfills.com"><i class="fas fa-map-marker-alt icon"></i> covidtesting@pillfills.com</a>
-    </div>
+    </div> -->
       <!--End Top Bar-->
       <!--Navigation-->
       <nav class="navbar navbar-expand  navbar-light">
@@ -31,8 +31,40 @@
           
           <!-- Links -->
           <ul class="navbar-nav ml-auto">
-            <li class="nav-item">
-              <a class="nav-link"><i class="fas fa-user"></i>&nbsp;Login</a>
+            <li class="nav-item" >
+              <a id="nav-admin" class="nav-link">Admin</a>
+              <!--Login Modal-->
+
+              <!-- Button trigger modal -->
+              <a id="nav-login" class="nav-link" data-toggle="modal" data-target="#loginModal"><i class="fas fa-user"></i>&nbsp;Login</a>
+
+              <!-- Modal -->
+              <div class="modal fade login-modal" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title w-100 text-center" id="loginModalLongTitle">Pillfill - Covid Testing</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <form class="login-form" id="login-form">
+                        <div class="form-group">
+                          <input id="user" class="form-control" type="text" placeholder="Username or Email Address" name="user" required>
+                        </div>
+                        <div class="form-group">
+                          <input id="password" class="form-control" type="password" placeholder="Password" name="password" required>
+                        </div>
+                        <button id="login-form-submit" type="button" class="btn btn-primary login-btn w-100 text-center">Login</button>
+                        <p class="w-100 text-center" id="login-error-msg">Invalid username <span id="error-msg-second-line">and/or password</span></p>
+                      </form>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              <!--End Login Modal-->
+
             </li>
           </ul>
         </nav>
@@ -55,5 +87,7 @@
   </div>
 </footer>
 <!--End Footer-->
+
+<script src="index.js"></script>
 </body>
 </html>

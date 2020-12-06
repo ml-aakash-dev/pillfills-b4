@@ -10,7 +10,7 @@
   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
   <script defer src="https://kit.fontawesome.com/b17ff000fe.js" crossorigin="anonymous"></script>
   <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/appointment.css">
+  <link rel="stylesheet" href="css/testForm.css">
 </head>
 <body>
 
@@ -21,7 +21,7 @@
       <!--Top Bar-->
       <!-- <div class="top-bar">
         <a href="tel:8885551212"><i class="fas fa-phone-alt icon"></i> 8885551212</a>
-        <a href="mailto:covidtesting@pillfills.com"><i class="fas fa-map-marker-alt icon"></i> covidtesting@pillfills.com</a>
+        <a href="mailto:covidtesting@pillfills.com"><i class="fas fa-mtf-marker-alt icon"></i> covidtesting@pillfills.com</a>
     </div> -->
       <!--End Top Bar-->
       <!--Navigation-->
@@ -36,8 +36,8 @@
             <!--Login Modal-->
 
             <!-- Button trigger modal -->
-            <a id="nav-login" class="nav-link" data-toggle="modal" data-target="#loginModal"><i class="fas fa-user"></i>&nbsp;Login</a>
-            <!-- <a id="nav-logout" class="nav-link" data-toggle="modal" data-target="#loginModal"><i class="fas fa-user"></i>&nbsp;Logout</a> -->
+            <!-- <a id="nav-login" class="nav-link" data-toggle="modal" data-target="#loginModal"><i class="fas fa-user"></i>&nbsp;Login</a> -->
+            <a id="nav-logout" class="nav-link" data-toggle="modal" data-target="#loginModal"><i class="fas fa-user"></i>&nbsp;Logout</a>
 
             <!-- Modal -->
             <div class="modal fade login-modal" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalCenterTitle" aria-hidden="true">
@@ -72,18 +72,25 @@
     
     <!--End Navigation-->
       <div class="content">
-        <h1>Make an Appointment</h1>
+        <h1>Test Form</h1>
       </div>
     </div>
   </div>
 </header>
 <!--End Header Section-->
 
-<!--Appointment Form-->
-<form class="ap-form">
+<!--Test Form-->
+<form class="tf-form">
     <div class="form-group">
-      <label for="ap-loc">Preferred Testing Location</label>
-      <select class="form-control" id="ap-loc" required>
+      <label for="tf-phone">Patient Phone</label>
+      <input type="phone" name="phone" class="form-control" 
+      id="tf-phone" placeholder="(___) ___-____"
+      data-mask="(___) ___-____"
+      pattern="\(\d{3}\)[ ]?\d{3}[-]?\d{4}" required>
+    </div>
+    <div class="form-group">
+      <label for="tf-loc">Preferred Testing Location</label>
+      <select class="form-control" id="tf-loc" required>
         <option disabled selected value="">Select a Location</option>
         <option>Lansing, IL</option>
         <option>Chicago Heights, IL</option>
@@ -91,48 +98,14 @@
       </select>
     </div>
     <div class="form-group">
-      <label for="ap-phone">Phone</label>
-      <input type="phone" name="phone" class="form-control" 
-      id="ap-phone" placeholder="(708) 555-1212" 
-      data-mask="(___) ___-____"
-      pattern="\(\d{3}\)[ ]?\d{3}[-]?\d{4}" required>
-    </div>
-    <div class="row">
-        <div class="col-md-6">
-            <div class="form-group">
-              <label for="ap-date">Preferred Testing Date</label>
-              <input type="date" name="date" class="form-control" id="ap-date" required>
-            </div>
-        </div>
-        <div class="col-md-6">
-            <div class="form-group">
-              <label for="ap-loc">Preferred Testing Location</label>
-              <select class="form-control" id="ap-loc" required>
-                <option disabled selected value="">Select Time</option>
-                <option>10:00 AM</option>
-                <option>10:30 AM</option>
-                <option>11:00 AM</option>
-                <option>10:30 AM</option>
-                <option>12:00 AM</option>
-                <option>10:30 AM</option>
-                <option>01:00 AM</option>
-                <option>01:30 AM</option>
-                <option>02:00 AM</option>
-                <option>02:30 AM</option>
-                <option>03:00 AM</option>
-                <option>03:30 AM</option>
-                <option>04:00 AM</option>
-                <option>04:30 AM</option>
-                <option>05:00 AM</option>
-              </select>
-            </div>
-        </div>
+      <label for="tf-image">Upload Driver's License</label>
+      <input type="file" name="image" class="form-control tf-fc" id="tf-image" accept="image/*" multiple required>
     </div>
     <div class="form-group text-center">
         <button type="submit" class="btn btn-primary send">Set Appointment</button>
     </div>
   </form>
-<!--End Appointment Form-->
+<!--End Test Form-->
 
 
 <!--Footer-->

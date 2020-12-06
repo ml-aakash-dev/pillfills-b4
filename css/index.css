@@ -58,7 +58,7 @@ header .content .appointment:hover{
 header .content h1 span{
     color: red;
 }
-@media(max-width: 600px){
+@media(max-width: 576px){
     header .content{
         margin-left: 10px;
     }
