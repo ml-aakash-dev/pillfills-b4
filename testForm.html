@@ -26,53 +26,56 @@
       <!--End Top Bar-->
       <!--Navigation-->
       <nav class="navbar navbar-expand  navbar-light">
-        <!-- Brand/logo -->
-        <a class="navbar-brand" href="index.html">COVID Testing <small>Chicagoland Drive-Up Testing</small></a>
+        <div class="container">
+          <!-- Brand/logo -->
+          <a class="navbar-brand" href="index.html">COVID Testing <small>Chicagoland Drive-Up Testing</small></a>
         
-        <!-- Links -->
-        <ul class="navbar-nav ml-auto">
-          <li class="nav-item" >
-            <a id="nav-admin" class="nav-link">Admin</a>
-            <!--Login Modal-->
+          <!-- Links -->
+          <ul class="navbar-nav ml-auto">
+            <li class="nav-item" >
+              <a id="nav-admin" class="nav-link">Admin</a>
+              <!--Login Modal-->
 
-            <!-- Button trigger modal -->
-            <!-- <a id="nav-login" class="nav-link" data-toggle="modal" data-target="#loginModal"><i class="fas fa-user"></i>&nbsp;Login</a> -->
-            <a id="nav-logout" class="nav-link" data-toggle="modal" data-target="#loginModal"><i class="fas fa-user"></i>&nbsp;Logout</a>
+              <!-- Button trigger modal -->
+              <a id="nav-login" class="nav-link" data-toggle="modal" data-target="#loginModal"><i class="fas fa-user"></i>&nbsp;Login</a>
 
-            <!-- Modal -->
-            <div class="modal fade login-modal" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalCenterTitle" aria-hidden="true">
-              <div class="modal-dialog modal-dialog-centered" role="document">
-                <div class="modal-content">
-                  <div class="modal-header">
-                    <h5 class="modal-title w-100 text-center" id="loginModalLongTitle">Pillfill - Covid Testing</h5>
-                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                      <span aria-hidden="true">&times;</span>
-                    </button>
-                  </div>
-                  <div class="modal-body">
-                    <form class="login-form" id="login-form">
-                      <div class="form-group">
-                        <input id="user" class="form-control" type="text" placeholder="Username or Email Address" name="user" required>
-                      </div>
-                      <div class="form-group">
-                        <input id="password" class="form-control" type="password" placeholder="Password" name="password" required>
-                      </div>
-                      <button id="login-form-submit" type="button" class="btn btn-primary login-btn w-100 text-center">Login</button>
-                      <p class="w-100 text-center" id="login-error-msg">Invalid username <span id="error-msg-second-line">and/or password</span></p>
-                    </form>
+              <!-- Modal -->
+              <div class="modal fade login-modal" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalCenterTitle" aria-hidden="true">
+                <div class="modal-dialog modal-dialog-centered" role="document">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <h5 class="modal-title w-100 text-center" id="loginModalLongTitle">Pillfill - Covid Testing</h5>
+                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                        <span aria-hidden="true">&times;</span>
+                      </button>
+                    </div>
+                    <div class="modal-body">
+                      <form class="login-form" id="login-form">
+                        <div class="form-group">
+                          <input id="user" class="form-control" type="text" placeholder="Username or Email Address" name="user" required>
+                        </div>
+                        <div class="form-group">
+                          <input id="password" class="form-control" type="password" placeholder="Password" name="password" required>
+                        </div>
+                        <button id="login-form-submit" type="button" class="btn btn-primary login-btn w-100 text-center">Login</button>
+                        <p class="w-100 text-center" id="login-error-msg">Invalid username <span id="error-msg-second-line">and/or password</span></p>
+                      </form>
+                    </div>
                   </div>
                 </div>
               </div>
-            </div>
-            <!--End Login Modal-->
+              <!--End Login Modal-->
 
-          </li>
-        </ul>
+            </li>
+          </ul>
+        </div>
       </nav>
     
     <!--End Navigation-->
       <div class="content">
-        <h1>Test Form</h1>
+        <div class="container">
+          <h1>Test Form</h1>
+        </div>
       </div>
     </div>
   </div>
@@ -80,37 +83,39 @@
 <!--End Header Section-->
 
 <!--Test Form-->
-<form class="tf-form">
-    <div class="form-group">
-      <label for="tf-phone">Patient Phone</label>
-      <input type="phone" name="phone" class="form-control" 
-      id="tf-phone" placeholder="(___) ___-____"
-      data-mask="(___) ___-____"
-      pattern="\(\d{3}\)[ ]?\d{3}[-]?\d{4}" required>
-    </div>
-    <div class="form-group">
-      <label for="tf-loc">Preferred Testing Location</label>
-      <select class="form-control" id="tf-loc" required>
-        <option disabled selected value="">Select a Location</option>
-        <option>Lansing, IL</option>
-        <option>Chicago Heights, IL</option>
-        <option>Joliet, IL</option>
-      </select>
-    </div>
-    <div class="form-group">
-      <label for="tf-image">Upload Driver's License</label>
-      <input type="file" name="image" class="form-control tf-fc" id="tf-image" accept="image/*" multiple required>
-    </div>
-    <div class="form-group text-center">
-        <button type="submit" class="btn btn-primary send">Set Appointment</button>
-    </div>
-  </form>
+<div class="container">
+  <form class="tf-form">
+      <div class="form-group">
+        <label for="tf-phone">Patient Phone</label>
+        <input type="phone" name="phone" class="form-control" 
+        id="tf-phone" placeholder="(___) ___-____"
+        data-mask="(___) ___-____"
+        pattern="\(\d{3}\)[ ]?\d{3}[-]?\d{4}" required>
+      </div>
+      <div class="form-group">
+        <label for="tf-loc">Preferred Testing Location</label>
+        <select class="form-control" id="tf-loc" required>
+          <option disabled selected value="">Select a Location</option>
+          <option>Lansing, IL</option>
+          <option>Chicago Heights, IL</option>
+          <option>Joliet, IL</option>
+        </select>
+      </div>
+      <div class="form-group">
+        <label for="tf-image">Upload Driver's License</label>
+        <input type="file" name="image" class="form-control tf-fc" id="tf-image" accept="image/*" multiple required>
+      </div>
+      <div class="form-group text-center">
+          <button type="submit" class="btn btn-primary send">Set Appointment</button>
+      </div>
+    </form>
+</div>
 <!--End Test Form-->
 
 
 <!--Footer-->
 <footer>
-  <div class="bottom-bar">
+  <div class="bottom-bar text-center">
       <p>Pillfills.com COVID Testing © Copyright 2020</p>
   </div>
 </footer>

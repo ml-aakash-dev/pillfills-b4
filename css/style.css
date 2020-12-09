@@ -2,6 +2,15 @@ body{
     width: 100%;
     overflow-x: hidden;
 }
+a{
+    text-decoration: none !important;
+    color: unset;
+}
+@media(min-width: 576px){   
+    .container{
+        padding: 0 15px !important;
+    }
+}
 
 /*---Top Bar---*/
 .top-bar{
@@ -31,11 +40,15 @@ body{
 /*--- Navigation ---*/
 .navbar{
     width: 100%;
+    /* padding: 0; */
+    /* padding: 10px 10%; */
+    padding: 10px;
+}
+.container{
     padding: 0;
-    padding: 10px 10%;
 }
 .navbar .navbar-brand{
-    font-size: 40px;
+    /* font-size: 40px; */
     font-weight: 700;
     color: white;
 }
@@ -44,14 +57,14 @@ body{
 }
 .navbar .navbar-brand small {
     display:block;
-    font-size: 17px;
+    font-size: 12px;
     font-weight: 600;
-    letter-spacing: 1.5px;
+    /* letter-spacing: 1.5px; */
   }
   .navbar a.nav-link{
       display: inline-block !important;
     color: white !important;
-    font-size: 20px;
+    /* font-size: 20px; */
     font-weight: 700;
 }
 .navbar a.nav-link:hover{
@@ -111,7 +124,7 @@ body{
     }
     .navbar .navbar-brand small {
         display:block;
-        font-size: 8px;
+        font-size: 10px;
         /* font-weight: 600; */
         /* letter-spacing: 1.5px; */
     }
@@ -138,12 +151,13 @@ footer .bottom-bar{
     left: 0;
     line-height: 40px;
     background-color: #228be6;
-    padding: 0 10%;
+    /* padding: 0 10%; */
     /* position: absolute;
     bottom: 0;
     left: 0; */
     width: 100%;
-    text-align: right;
+    /* text-align: right; */
+    padding: 0 10px;
 }
 footer .bottom-bar p{
     color: white;
@@ -153,7 +167,7 @@ footer .bottom-bar p{
 }
 @media(max-width:576px){
     footer .bottom-bar{
-        padding: 10px;
+        padding: 0 10px;
     }
     footer .bottom-bar p{
         font-size: 12px;

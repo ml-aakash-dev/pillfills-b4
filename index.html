@@ -26,68 +26,216 @@
       <!--End Top Bar-->
       <!--Navigation-->
       <nav class="navbar navbar-expand  navbar-light">
-          <!-- Brand/logo -->
-          <a class="navbar-brand" href="index.html">COVID Testing <small>Chicagoland Drive-Up Testing</small></a>
+          <div class="container">
+            <!-- Brand/logo -->
+            <a class="navbar-brand" href="index.html">COVID Testing <small>Chicagoland Drive-Up Testing</small></a>
           
-          <!-- Links -->
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item" >
-              <a id="nav-admin" class="nav-link">Admin</a>
-              <!--Login Modal-->
-
-              <!-- Button trigger modal -->
-              <a id="nav-login" class="nav-link" data-toggle="modal" data-target="#loginModal"><i class="fas fa-user"></i>&nbsp;Login</a>
-
-              <!-- Modal -->
-              <div class="modal fade login-modal" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalCenterTitle" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title w-100 text-center" id="loginModalLongTitle">Pillfill - Covid Testing</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body">
-                      <form class="login-form" id="login-form">
-                        <div class="form-group">
-                          <input id="user" class="form-control" type="text" placeholder="Username or Email Address" name="user" required>
-                        </div>
-                        <div class="form-group">
-                          <input id="password" class="form-control" type="password" placeholder="Password" name="password" required>
-                        </div>
-                        <button id="login-form-submit" type="button" class="btn btn-primary login-btn w-100 text-center">Login</button>
-                        <p class="w-100 text-center" id="login-error-msg">Invalid username <span id="error-msg-second-line">and/or password</span></p>
-                      </form>
+            <!-- Links -->
+            <ul class="navbar-nav ml-auto">
+              <li class="nav-item" >
+                <a id="nav-admin" class="nav-link">Admin</a>
+                <!--Login Modal-->
+  
+                <!-- Button trigger modal -->
+                <a id="nav-login" class="nav-link" data-toggle="modal" data-target="#loginModal"><i class="fas fa-user"></i>&nbsp;Login</a>
+  
+                <!-- Modal -->
+                <div class="modal fade login-modal" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalCenterTitle" aria-hidden="true">
+                  <div class="modal-dialog modal-dialog-centered" role="document">
+                    <div class="modal-content">
+                      <div class="modal-header">
+                        <h5 class="modal-title w-100 text-center" id="loginModalLongTitle">Pillfill - Covid Testing</h5>
+                        <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                          <span aria-hidden="true">&times;</span>
+                        </button>
+                      </div>
+                      <div class="modal-body">
+                        <form class="login-form" id="login-form">
+                          <div class="form-group">
+                            <input id="user" class="form-control" type="text" placeholder="Username or Email Address" name="user" required>
+                          </div>
+                          <div class="form-group">
+                            <input id="password" class="form-control" type="password" placeholder="Password" name="password" required>
+                          </div>
+                          <button id="login-form-submit" type="button" class="btn btn-primary login-btn w-100 text-center">Login</button>
+                          <p class="w-100 text-center" id="login-error-msg">Invalid username <span id="error-msg-second-line">and/or password</span></p>
+                        </form>
+                      </div>
                     </div>
                   </div>
                 </div>
-              </div>
-              <!--End Login Modal-->
-
-            </li>
-          </ul>
+                <!--End Login Modal-->
+  
+              </li>
+            </ul>
+          </div>
         </nav>
       
       <!--End Navigation-->
       <div class="content">
-        <h1>Welcome <br/>Free <br/><span>Covid-19 </span><br/>Testing Site</h1>
-        <a class="appointment" href="appointment.html">Make an Appointment</a>
+        <div class="container">
+          <h1>Welcome <br/>Free <br/><span>Covid-19 </span><br/>Testing Site</h1>
+          <a class="appointment" href="appointment.html">Make an Appointment</a>
+        </div>
       </div>
     </div>
   </div>
 </header>
 <!--End Header Section-->
 
+<!--Our Testing Location-->
+<section class="test-locations text-center">
+  <div class="container">
+    <h1>Our Testing Locations</h1>
+    <div id="map" className="z-depth-1-half map-container mb-5" style="width: 100%; height: 80vh;"></div>
+  </div>
+</section>
+<!--End Our Testing Location-->
+
+<!--More Infor-->
+<section class="more-info">
+  <div class="container">
+    <h1>MORE INFORMATION ABOUT THE <br>COVID-19 PANDEMIC</h1>
+    <div class="row">
+      <div class="col col-md-6 col-12">
+        <a href="http://www.dph.illinois.gov/covid19"  target="_blank" rel="noopener noreferrer">
+          <div class="img-box">
+            <img src="./css/images/IDPH.jpg" alt="logo">
+          </div>
+          <h2>Illinois Department of Public Health</h2>
+        </a>
+      </div>
+      <div class="col col-md-6 col-12">
+        <a href="https://www.cdc.gov/coronavirus/2019-ncov/index.html?CDC_AA_refVal=https%3A%2F%2Fwww.cdc.gov%2Fcoronavirus%2Findex.html"  target="_blank" rel="noopener noreferrer">
+        <div class="img-box">
+          <img src="./css/images/cdc.png" alt="logo">
+        </div>
+        <h2>Center for Disease Control and Prevention</h2>
+        </a>
+      </div>
+    </div>
+    <dic class="row">
+      <div class="col col-md-6 col-12">
+        <a href="https://www.who.int/health-topics/coronavirus#tab=tab_1"  target="_blank" rel="noopener noreferrer">
+        <div class="img-box">
+          <img src="./css/images/who.png" alt="logo">
+        </div>
+        <h2>World Health Organization</h2>
+        </a>
+      </div>
+      <div class="col col-md-6 col-12">
+        <a href="https://www.nih.gov/coronavirus"  target="_blank" rel="noopener noreferrer">
+        <div class="img-box">
+          <img src="./css/images/nih.png" alt="logo">
+        </div>
+        <h2>National Institutes of Health</h2>
+        </a>
+      </div>
+    </dic>
+  </div>
+</section>
+<!--End More Infor-->
+
 
 <!--Footer-->
 <footer>
-  <div class="bottom-bar">
+  <div class="bottom-bar text-center">
       <p>Pillfills.com COVID Testing © Copyright 2020</p>
   </div>
 </footer>
 <!--End Footer-->
 
 <script src="index.js"></script>
+    <!-- Google Maps settings -->
+
+    <script>
+      function initMap(){
+        // url = 'https://wholecellonline.com/whole-cell-online-site/store50.png'
+        
+        var zoom;
+        if(window.innerWidth>576){
+          zoom=10
+        }else{
+          zoom=9
+        }
+        //Map options
+        var options={
+          zoom:zoom,
+          center:{lat:41.6303, lng:-87.8539}
+        }
+        //New Map
+        var map = new google.maps.Map(document.getElementById('map'),options)
+
+      //markers array
+       var markers = [
+       {
+          coords:{lat:41.5648, lng:-87.5389},
+          content:'<div><h5>Lansing Testing Site</h5><p><b>Directions:</b> <a href="https://goo.gl/maps/jxLrysCVVy4A9HAJ7" target="_blank" rel="noopener noreferrer">Lansing, Illinois, United States </a></p></div>',
+          title:'Lansing Testing Site',
+          label:'Lansing Testing Site'
+        },
+       {
+          coords:{lat:41.5061, lng:-87.6356},
+          content:'<div><h5>Chicago Heights Testing Site</h5><p><b>Directions:</b> <a href="https://goo.gl/maps/nx86ZTqw3jjCidiFA" target="_blank" rel="noopener noreferrer">Chicago Heights, Illinois, United States </a></p></div>',
+          title:'Chicago Heights Testing Site',
+          label:'Chicago Heights Testing Site'
+        },
+       {
+          coords:{lat:41.5250, lng:-88.0817},
+          content:'<div><h5>Joliet Testing Site</h5><p><b>Directions:</b> <a href="https://goo.gl/maps/QHXFUr74AhHGwt969" target="_blank" rel="noopener noreferrer">Joliet, Illinois, United States </a></p></div>',
+          title:'Joliet Testing Site',
+          label:'Joliet Testing Site'
+        }
+       ]
+
+       //loop through markers
+        var gmarkers = [];
+       for(var i = 0;i < markers.length; i++){
+         //add marker
+        gmarkers.push(addMarker(markers[i]));
+       }
+
+        //Add Marker Function
+        function addMarker(props){
+          var marker= new google.maps.Marker({
+          position: props.coords,
+          map:map,
+          title: props.title,
+          // label: {
+          // text: props.label,
+          // color: '#222222',
+          // fontSize: '15px',
+          // fontWeight: '600'
+          //   },
+          })
+
+          //check content
+          if(props.content){
+            var infoWindow = new google.maps.InfoWindow({
+            content: props.content
+          })
+
+          marker.addListener('click', function(){
+            infoWindow.open(map,marker)
+          })
+          }
+          return marker;
+        }
+
+       var markerCluster = new MarkerClusterer(map, gmarkers,
+      {imagePath: 'https://wholecellonline.com/whole-cell-online-site/markerclustererplus/images/m'});
+        
+      // google.maps.event.addDomListener(window, 'load', initMap)
+      }
+      function loadScript() {
+        var script = document.createElement("script");
+        script.type = "text/javascript";
+        script.src = "https://maps.googleapis.com/maps/api/js?key=AIzaSyBmFOOpGfwDilHaxqgiOqoOCuCcBVXgSis&callback=initMap";
+        document.body.appendChild(script);
+      }
+
+      window.onload = loadScript;
+    </script>
+  <script src="https://unpkg.com/@google/markerclustererplus@4.0.1/dist/markerclustererplus.min.js"></script>
 </body>
 </html>

@@ -51,7 +51,11 @@ header .content h1{
 
 /*---Test Data Table---*/
 
-.td-table{
+/* .td-table{
     margin-bottom: 80px;
+    width: 100%;
 }
+.td-table.table-responsive{
+    display: unset !important;
+} */
 /*---End Test Data Table---*/

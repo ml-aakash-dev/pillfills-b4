@@ -27,11 +27,12 @@ header {
     /* left: 50%; */
     top: 50%;
     transform: translateY(-50%);
-    margin-left: 10%;
+    /* margin-left: 10%; */
     width: 100%;
     /* min-height: 100%; */
     color: white;
-    padding-top: 10px;
+    /* padding-top: 10px; */
+    /* padding: 10px 10%; */
 }
 header .content h1{
     font-size: 60px;
@@ -73,3 +74,64 @@ header .content h1 span{
     }
 }
 /*---End Header Section --*/
+
+/*---Our Testing Location---*/
+.test-locations{
+    padding: 50px 0;
+    width: 100%;
+}
+.test-locations h1{
+    font-weight: 700;
+}
+@media(max-width: 576px){
+    .test-locations h1{
+        font-size: 25px;
+    }
+}
+/*---End Our Testing Location---*/
+
+/*---More Info---*/
+.more-info{
+    padding: 50px 10px;
+}
+.more-info h1{
+    font-weight: 700;
+    text-align: center;
+}
+.more-info h2{
+    font-size: 20px;
+    font-weight: 700;
+    margin-top: 10px;
+    text-align: center;
+}
+.more-info .col{
+    padding: 20px 0;
+}
+.more-info .col .img-box{
+    width: 200px;
+    height: 200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: auto;
+}
+.more-info .col img{
+    width: 100%;
+    height: auto;
+}
+.more-info .col:hover{
+    cursor: pointer;
+}
+.more-info .col:hover h2{
+    color: #228be6;
+}
+@media(max-width: 576px){
+    .more-info h1{
+        font-size: 25px;
+    }
+    .more-info h2{
+        font-size: 15px;
+    }
+}
+/*---End More Info---*/
