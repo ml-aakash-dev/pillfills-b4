@@ -1,61 +1,101 @@
-
 /*--- Header Section --*/
-header {
+header.masthead {
+    padding-top: 10rem;
+    padding-bottom: 6rem;
+    text-align: center;
+    color: #fff;
+    background: linear-gradient(to bottom, rgba(0, 0, 0, 0.8) 0%, rgba(0, 0, 0, 0.8) 100%), 
+    url(images/test-data.jpg);
+    background-repeat: no-repeat;
+    background-attachment: scroll;
+    background-position: center center;
+    background-size: cover;
+  }
+  /* header {
     position: relative;
     width: 100%;
-    min-height: 40vh;
+    height: 100vh;
   }
   header .bgimg {
     width: 100%;
-    height: 40vh;
+    height: 100%;
     background-repeat: no-repeat;
     background-size: cover;
     background-attachment: fixed;
     background-position: center;
-    background-image: url(images/test-data.jpg);
+    background-image: url(images/header.jpg);
   }
   header .wrapper{
     position: absolute;
-    top: 0;
     bottom: 0;
     background: rgba(0, 0, 0, 0.7);
     width: 100%;
-    height: 40vh;
+    min-height: 100vh;
+  } */
+  
+  header .content{
+    position: absolute;
+    /* left: 50%; */
+    top: 50%;
+    transform: translateY(-50%);
+    /* margin-left: 10%; */
+    width: 100%;
+    /* min-height: 100%; */
+    color: white;
+    /* padding-top: 10px; */
+    /* padding: 10px 10%; */
+  }
+  header .container h1{
+    font-size: 40px;
+    font-weight: 700;
+  }
+  header .container .appointment{
+    display: inline-block;
+    text-decoration: none;
+    background-color: transparent;
+    color: white;
+    font-size: 20px;
+    font-weight: 700;
+    padding: 10px 20px;
+    border: 2px solid white;
+    border-radius: 20px;
+    margin-top: 10px;
+    transition: .3s;
+  }
+  header .container .appointment:hover{
+    background-color: #228be6;
+    border: 2px solid #228be6;
   }
   
-header .content h1{
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    transform: translateX(-50%) translateY(-50%);
-    font-size: 35px;
-    font-weight: 700;
-    color: white;
-    margin-top: 50px;
-}
-@media(max-width: 576px){
-    header .content{
+  header .container h1 span{
+    color: red;
+  }
+  @media (min-width: 768px){
+    header.masthead {
+      padding-top: 7rem;
+      padding-bottom: 7rem;
+      }
+    }
+  @media(max-width: 576px){
+    header .container{
         margin-left: 10px;
     }
     
-    header .content h1{
+    header .container h1{
         font-size: 25px;
         font-weight: 700;
         color: white;
     }
-    header .content .appointment{
+    header .container .appointment{
         font-size: 15px;
     }
-}
-/*---End Header Section --*/
+  }
+  /*---End Header Section --*/
 
 /*---Test Data Table---*/
 
-/* .td-table{
+.td-table{
     margin-bottom: 80px;
     width: 100%;
 }
-.td-table.table-responsive{
-    display: unset !important;
-} */
 /*---End Test Data Table---*/

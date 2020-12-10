@@ -1,4 +1,5 @@
 body{
+    position: relative;
     width: 100%;
     overflow-x: hidden;
 }
@@ -43,9 +44,18 @@ a{
     /* padding: 0; */
     /* padding: 10px 10%; */
     padding: 10px;
+    transition: background-color .3s ease-in-out;
 }
 .container{
     padding: 0;
+}
+.navbar .navbar-toggler{
+    color: white;
+    border: none;
+}
+.navbar .navbar-toggler:focus{
+    border: none;
+    outline: none;
 }
 .navbar .navbar-brand{
     /* font-size: 40px; */
@@ -105,6 +115,11 @@ a{
   .login-form .login-btn:hover{
     color: white;
     background-color: #228be6;
+  }
+  @media(max-width: 767px){
+    .navbar{
+        background-color: rgba(0,0,0,0.8);
+    }
   }
   @media(max-width: 600px){
     .login-form{

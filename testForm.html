@@ -14,70 +14,66 @@
 </head>
 <body>
 
-<!-- Start Header Section -->
-<header>
-  <div class="bgimg">
-    <div class="wrapper">
-      <!--Top Bar-->
-      <!-- <div class="top-bar">
-        <a href="tel:8885551212"><i class="fas fa-phone-alt icon"></i> 8885551212</a>
-        <a href="mailto:covidtesting@pillfills.com"><i class="fas fa-mtf-marker-alt icon"></i> covidtesting@pillfills.com</a>
-    </div> -->
-      <!--End Top Bar-->
-      <!--Navigation-->
-      <nav class="navbar navbar-expand  navbar-light">
-        <div class="container">
-          <!-- Brand/logo -->
-          <a class="navbar-brand" href="index.html">COVID Testing <small>Chicagoland Drive-Up Testing</small></a>
-        
-          <!-- Links -->
-          <ul class="navbar-nav ml-auto">
-            <li class="nav-item" >
-              <a id="nav-admin" class="nav-link">Admin</a>
-              <!--Login Modal-->
+  <!--Navigation-->
+  <nav id="navbar" class="navbar navbar-expand-md  navbar-dark fixed-top">
+    <div class="container">
+      <!-- Brand/logo -->
+      <a class="navbar-brand" href="index.html">COVID Testing <small>Chicagoland Drive-Up Testing</small></a>
+    
+<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
+  <span class="navbar-toggler-icon"></span>
+</button>
+<div class="collapse navbar-collapse" id="navbarTogglerDemo02">
+        <!-- Links -->
+        <ul class="navbar-nav ml-auto">
+          <li class="nav-item" >
+            <a id="nav-admin" class="nav-link">Admin</a>
+          </li>
+          <li class="nav-item" >
+            <!--Login Modal-->
 
-              <!-- Button trigger modal -->
-              <a id="nav-login" class="nav-link" data-toggle="modal" data-target="#loginModal"><i class="fas fa-user"></i>&nbsp;Login</a>
+            <!-- Button trigger modal -->
+            <a id="nav-login" class="nav-link" data-toggle="modal" data-target="#loginModal"><i class="fas fa-user"></i>&nbsp;Login</a>
 
-              <!-- Modal -->
-              <div class="modal fade login-modal" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalCenterTitle" aria-hidden="true">
-                <div class="modal-dialog modal-dialog-centered" role="document">
-                  <div class="modal-content">
-                    <div class="modal-header">
-                      <h5 class="modal-title w-100 text-center" id="loginModalLongTitle">Pillfill - Covid Testing</h5>
-                      <button type="button" class="close" data-dismiss="modal" aria-label="Close">
-                        <span aria-hidden="true">&times;</span>
-                      </button>
-                    </div>
-                    <div class="modal-body">
-                      <form class="login-form" id="login-form">
-                        <div class="form-group">
-                          <input id="user" class="form-control" type="text" placeholder="Username or Email Address" name="user" required>
-                        </div>
-                        <div class="form-group">
-                          <input id="password" class="form-control" type="password" placeholder="Password" name="password" required>
-                        </div>
-                        <button id="login-form-submit" type="button" class="btn btn-primary login-btn w-100 text-center">Login</button>
-                        <p class="w-100 text-center" id="login-error-msg">Invalid username <span id="error-msg-second-line">and/or password</span></p>
-                      </form>
-                    </div>
+            <!-- Modal -->
+            <div class="modal fade login-modal" id="loginModal" tabindex="-1" role="dialog" aria-labelledby="loginModalCenterTitle" aria-hidden="true">
+              <div class="modal-dialog modal-dialog-centered" role="document">
+                <div class="modal-content">
+                  <div class="modal-header">
+                    <h5 class="modal-title w-100 text-center" id="loginModalLongTitle">Pillfill - Covid Testing</h5>
+                    <button type="button" class="close" data-dismiss="modal" aria-label="Close">
+                      <span aria-hidden="true">&times;</span>
+                    </button>
+                  </div>
+                  <div class="modal-body">
+                    <form class="login-form" id="login-form">
+                      <div class="form-group">
+                        <input id="user" class="form-control" type="text" placeholder="Username or Email Address" name="user" required>
+                      </div>
+                      <div class="form-group">
+                        <input id="password" class="form-control" type="password" placeholder="Password" name="password" required>
+                      </div>
+                      <button id="login-form-submit" type="button" class="btn btn-primary login-btn w-100 text-center">Login</button>
+                      <p class="w-100 text-center" id="login-error-msg">Invalid username <span id="error-msg-second-line">and/or password</span></p>
+                    </form>
                   </div>
                 </div>
               </div>
-              <!--End Login Modal-->
+            </div>
+            <!--End Login Modal-->
 
-            </li>
-          </ul>
-        </div>
-      </nav>
-    
-    <!--End Navigation-->
-      <div class="content">
-        <div class="container">
-          <h1>Test Form</h1>
-        </div>
+          </li>
+        </ul>
       </div>
     </div>
+  </nav>
+
+<!--End Navigation-->
+
+<!-- Start Header Section -->
+<header class="masthead">
+  <div class="container">
+    <h1>Test Form</h1>
   </div>
 </header>
 <!--End Header Section-->
